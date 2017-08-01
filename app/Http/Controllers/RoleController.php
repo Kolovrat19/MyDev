@@ -103,6 +103,7 @@ class RoleController extends Controller
       $role->description = $request->description;
       $role->save();
 
+
       if ($request->permissions) {
         $role->syncPermissions(explode(',', $request->permissions));
       }
@@ -119,6 +120,6 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }

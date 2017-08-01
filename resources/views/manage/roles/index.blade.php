@@ -31,8 +31,9 @@
                     <a href="{{route('roles.show', $role->id)}}" class="button is-primary is-fullwidth">Details</a>
                   </div>
                   <div class="column is-one-half">
-                    <a href="{{route('roles.edit', $role->id)}}" class="button is-light is-fullwidth">Edit</a>
+                    <a href="{{route('roles.edit', $role->id)}}" class="button is-light is-fullwidth">{{__('buttons.edit')}}</a>
                   </div>
+
                 </div>
               </div>
             </article>
