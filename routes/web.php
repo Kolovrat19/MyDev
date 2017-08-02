@@ -23,6 +23,11 @@ Route::prefix('manage')->middleware('role:superadministrator|administrator|edito
   Route::resource('/users', 'UserController');
   Route::resource('/permissions', 'PermissionController', ['except' => 'destroy']);
   Route::resource('/roles', 'RoleController', ['except' => 'destroy']);
+
+  // Admin Category
+  Route::resource('/category', 'CategoryController');
+  Route::resource('/product', 'ProductController');
+  
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
